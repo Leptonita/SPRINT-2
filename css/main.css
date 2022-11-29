@@ -657,7 +657,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 1140px;
   }
 }
 .row {
@@ -10650,39 +10650,38 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.semi-redondeado-dere {
-  position: absolute;
-  z-index: -1;
-  width: 65%;
-  height: 70%;
-  border-radius: 0 0 0 6rem;
-  top: 30%;
-  left: 35%;
-  overflow-x: visible;
-}
-
 .text-gris {
   color: #adb5bd;
 }
 
-/* super pantallas forma azul
+.semi-redondeado-dere {
+  position: absolute;
+  z-index: -1;
+  width: 71%;
+  height: 70%;
+  border-radius: 0 0 0 6rem;
+  top: 30%;
+  left: 35%;
+}
 
-@media all and (min-width: 769px){
-    .semi-redondeado-dere { width: 70%; }
-}*/
-@media all and (min-width: 960px) {
+.overflow-lg-hide {
+  overflow-x: hidden;
+}
+
+/* en pantallas grandes forma azul dere*/
+@media all and (min-width: 825px) {
   .semi-redondeado-dere {
-    width: 95%;
+    width: 75%;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 769px) {
   .semi-redondeado-dere {
     width: 117%;
   }
 }
 @media all and (min-width: 1441px) {
   .semi-redondeado-dere {
-    width: 160%;
+    width: 140%;
   }
 }
 @media all and (min-width: 1771px) {
@@ -10690,6 +10689,7 @@ textarea.form-control-lg {
     width: 240%;
   }
 }
+/* btn login*/
 .nav-link:hover, .nav-link:focus {
   color: #FA5959;
 }
