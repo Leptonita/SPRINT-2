@@ -1,0 +1,118 @@
+// tipografia
+$font-family-sans-serif: 'Rubik',
+sans-serif;
+
+$font-weight-semibold: 500;
+$h1-font-size: 2.2rem;
+
+// personalizar theme-color-variables
+$primary: #5265E1;
+$secondary: #FA5959;
+
+// menu navbar
+$navbar-brand-margin-end: 1.5rem;
+
+$navbar-toggler-padding-x: 0.5rem;
+$navbar-toggler-padding-y: 0.5rem;
+
+// breakingpoints limitados
+$grid-breakpoints: (xs: 0,
+    sm: 480px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1200px);
+
+$container-max-widths: (sm: 420px,
+    md: 720px,
+    lg: 960px,
+    xl: 960px);
+
+//importar functions y variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-spacers: (6: $spacer * 4,
+    7: $spacer * 5,
+);
+
+$spacers: map-merge($custom-spacers, $spacers);
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+.semi-redondeado-dere {
+    position: absolute;
+    z-index: -1;
+    width: 65%;
+    height: 70%;
+    border-radius: 0 0 0 6rem;
+    top: 30%;
+    left: 35%;
+    overflow-x: visible;
+}
+
+.text-gris {
+    color: $gray-500;
+}
+
+/* super pantallas forma azul
+
+@media all and (min-width: 769px){
+    .semi-redondeado-dere { width: 70%; }
+}*/
+@media all and (min-width: 960px) {
+    .semi-redondeado-dere {
+        width: 95%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .semi-redondeado-dere {
+        width: 117%;
+    }
+}
+
+@media all and (min-width: 1441px) {
+    .semi-redondeado-dere {
+        width: 150%;
+    }
+}
+
+@media all and (min-width: 1771px) {
+    .semi-redondeado-dere {
+        width: 240%;
+    }
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: $secondary;
+  }
+
+
+//botones
+.btn {
+    font-size: 0.90rem;
+}
+.btn-primary:hover {
+    color: $primary;
+    border: 2px solid $primary;
+    background-color: white;
+}
+
+.btn-secondary, .btn-secondary a {
+    color: $light;
+}
+.btn-secondary:hover {
+    color: $secondary;
+    border: 2px solid $secondary;
+    background-color: white;
+}
+.btn-light, .btn-light a {
+    color: $gray-600;
+}
+.btn-light:hover {
+    color: $gray-600;
+    border: 2px solid $gray-600;
+    background-color: white;
+}
