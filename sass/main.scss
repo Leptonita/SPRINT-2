@@ -4,6 +4,7 @@ sans-serif;
 
 $font-weight-semibold: 500;
 $h1-font-size: 2.2rem;
+$h2-font-size: 1.7rem;
 
 // personalizar theme-color-variables
 $primary: #5265E1;
@@ -14,6 +15,7 @@ $navbar-brand-margin-end: 1.5rem;
 
 $navbar-toggler-padding-x: 0.5rem;
 $navbar-toggler-padding-y: 0.5rem;
+
 
 // breakingpoints limitados
 $grid-breakpoints: (xs: 0,
@@ -31,8 +33,10 @@ $container-max-widths: (sm: 420px,
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 
-$custom-spacers: (6: $spacer * 4,
+$custom-spacers: (
+    6: $spacer * 4,
     7: $spacer * 5,
+    8: $spacer * 6,
 );
 
 $spacers: map-merge($custom-spacers, $spacers);
@@ -43,7 +47,7 @@ $spacers: map-merge($custom-spacers, $spacers);
 .text-gris {
     color: $gray-500;
 }
-
+/* forma azul  */
 .semi-redondeado-dere {
     position: absolute;
     z-index: -1;
@@ -53,43 +57,66 @@ $spacers: map-merge($custom-spacers, $spacers);
     top: 30%;
     left: 35%;    
 }
+.semi-redondeado-izq {
+    position: absolute;
+    z-index: -1;
+    width: 71%;
+    height: 83%;
+    border-radius: 0 0 6rem 0;
+    top: 30%;
+    right: 35%;   
+    overflow: visible; 
+}
+
+
 
 .overflow-lg-hide { overflow-x: hidden;} 
 
 /* en pantallas grandes forma azul dere*/
 
-@media all and (min-width: 825px) {
-    .semi-redondeado-dere {
+@media all and (min-width: 769px) {
+    .semi-redondeado-dere ,
+    .semi-redondeado-izq { 
         width: 75%;
     }
 }
 
-@media all and (min-width: 769px){
-    .semi-redondeado-dere { 
+@media all and (min-width: 825px){
+    .semi-redondeado-dere ,
+    .semi-redondeado-izq { 
         width: 117%;      
     }
 }
 
 @media all and (min-width: 1441px) {
-    .semi-redondeado-dere {
+    .semi-redondeado-dere ,
+    .semi-redondeado-izq { 
         width: 140%;
     }
 }
 
 @media all and (min-width: 1771px) {
-    .semi-redondeado-dere {
+    .semi-redondeado-dere ,
+    .semi-redondeado-izq { 
         width: 240%;
     }
 } 
 
+@media all and (max-width: 42rem) {
+    .img90 { max-width: 90%;}
+}
+
 /* btn login*/
+.nav-link {
+    font-size: 0.8rem;
+}
 .nav-link:hover, .nav-link:focus {
     color: $secondary;
   }
-
+ .navbar-toggler { font-weight: 700;}
 //botones
 .btn {
-    font-size: 0.90rem;
+    font-size: 0.80rem;
 }
 .btn-primary:hover {
     color: $primary;
