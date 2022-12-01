@@ -11007,6 +11007,7 @@ textarea.form-control-lg {
     width: 240%;
   }
 }
+/* en pantallas pequeñas */
 @media all and (max-width: 42rem) {
   .img90 {
     max-width: 90%;
@@ -11016,8 +11017,10 @@ textarea.form-control-lg {
 .nav-link {
   font-size: 0.8rem;
 }
-
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover {
+  color: #FA5959;
+}
+.nav-link:focus {
   color: #FA5959;
 }
 
@@ -11053,4 +11056,27 @@ textarea.form-control-lg {
   color: #6c757d;
   border: 2px solid #6c757d;
   background-color: white;
+}
+
+.h-95 {
+  height: 95%;
+}
+
+.nav-tabs .nav-item .nav-link {
+  border: none;
+  padding: 1.5rem;
+  color: #495057;
+}
+.nav-tabs .nav-item .nav-link.active {
+  color: #212529;
+  border-bottom: 0.2rem solid #FA5959;
+}
+.nav-tabs .nav-item .nav-link:visited {
+  color: #6c757d;
+}
+.nav-tabs .nav-item .nav-link:hover {
+  color: #FA5959;
+}
+.nav-tabs .nav-item .nav-link:focus {
+  color: #FA5959;
 }/*# sourceMappingURL=main.css.map */
