@@ -16,6 +16,8 @@ $navbar-brand-margin-end: 1.5rem;
 $navbar-toggler-padding-x: 0.5rem;
 $navbar-toggler-padding-y: 0.5rem;
 
+
+
 // breakingpoints limitados
 $grid-breakpoints: (xs: 0,
     sm: 480px,
@@ -31,6 +33,10 @@ $container-max-widths: (sm: 420px,
 //importar functions y variables
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+
+// iconos acordeon faq
+$accordion-button-icon:         url("../img/icon-arrow.svg");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$secondary}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
 
 $custom-spacers: (
@@ -85,6 +91,13 @@ $spacers: map-merge($custom-spacers, $spacers);
 @media all and (min-width: 825px){
     .semi-redondeado-dere ,
     .semi-redondeado-izq { 
+        width: 75%;      
+    }
+}
+
+@media all and (min-width: 1024px){
+    .semi-redondeado-dere ,
+    .semi-redondeado-izq { 
         width: 117%;      
     }
 }
@@ -122,8 +135,9 @@ $spacers: map-merge($custom-spacers, $spacers);
     border: none;    
 }
 .navbar-toggler-icon {
-
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='black' stroke-linecap='butt' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/></svg>");;
+    background-image: url("../img/icon-hamburger.svg");
+    background-size: 75%;
+    margin-right: 1.5rem;
 }
 //botones
 .btn {
@@ -210,4 +224,30 @@ $spacers: map-merge($custom-spacers, $spacers);
 }
 .card .card-img-top {
     width: 35%;
+}
+
+.accordion-item {
+    border-left: none;
+    border-right: none;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    color: $gray-700;
+    background-color: white;
+}
+
+.accordion-button:focus {
+    border: 0;
+    box-shadow: 0 1px $gray-300;
+}
+
+
+.accordion-body {
+    color: $gray-600;
+    
+}
+
+.accordion-button {
+    padding-left: 0;
 }

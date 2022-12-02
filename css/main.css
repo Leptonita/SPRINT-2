@@ -4275,11 +4275,11 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: #212529;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("../img/icon-arrow.svg");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234a5bcb'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FA5959'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #a9b2f0;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
@@ -10992,6 +10992,12 @@ textarea.form-control-lg {
 @media all and (min-width: 825px) {
   .semi-redondeado-dere,
 .semi-redondeado-izq {
+    width: 75%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .semi-redondeado-dere,
+.semi-redondeado-izq {
     width: 117%;
   }
 }
@@ -11029,7 +11035,9 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='black' stroke-linecap='butt' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  background-image: url("../img/icon-hamburger.svg");
+  background-size: 75%;
+  margin-right: 1.5rem;
 }
 
 .btn {
@@ -11111,4 +11119,28 @@ textarea.form-control-lg {
 
 .card .card-img-top {
   width: 35%;
+}
+
+.accordion-item {
+  border-left: none;
+  border-right: none;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: #495057;
+  background-color: white;
+}
+
+.accordion-button:focus {
+  border: 0;
+  box-shadow: 0 1px #dee2e6;
+}
+
+.accordion-body {
+  color: #6c757d;
+}
+
+.accordion-button {
+  padding-left: 0;
 }/*# sourceMappingURL=main.css.map */
