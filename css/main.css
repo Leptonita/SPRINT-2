@@ -11102,4 +11102,13 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-item .nav-link:hover {
   color: #FA5959;
+}
+
+.card {
+  min-width: 13rem;
+  max-width: 25rem;
+}
+
+.card .card-img-top {
+  width: 35%;
 }/*# sourceMappingURL=main.css.map */

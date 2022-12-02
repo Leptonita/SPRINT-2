@@ -201,6 +201,13 @@ $spacers: map-merge($custom-spacers, $spacers);
     }
     &:hover {
         color: $secondary;
-    }
-    
+    }    
+}
+
+.card {
+    min-width: 13rem;
+    max-width: 25rem;
+}
+.card .card-img-top {
+    width: 35%;
 }
