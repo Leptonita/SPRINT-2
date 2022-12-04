@@ -261,3 +261,12 @@ $spacers: map-merge($custom-spacers, $spacers);
 .navfoot {
     flex:3;
 }
+
+.invalid-tooltip {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#inputEmail {
+    font-size: 0.8rem;
+}

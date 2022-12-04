@@ -11151,4 +11151,13 @@ textarea.form-control-lg {
 
 .navfoot {
   flex: 3;
+}
+
+.invalid-tooltip {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#inputEmail {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
