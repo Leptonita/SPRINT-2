@@ -251,3 +251,13 @@ $spacers: map-merge($custom-spacers, $spacers);
 .accordion-button {
     padding-left: 0;
 }
+
+//form validation
+.was-validated .form-control:invalid {
+    background-image: url('../img/icon-error.svg');
+
+}
+
+.navfoot {
+    flex:3;
+}

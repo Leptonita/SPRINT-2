@@ -11143,4 +11143,12 @@ textarea.form-control-lg {
 
 .accordion-button {
   padding-left: 0;
+}
+
+.was-validated .form-control:invalid {
+  background-image: url("../img/icon-error.svg");
+}
+
+.navfoot {
+  flex: 3;
 }/*# sourceMappingURL=main.css.map */
