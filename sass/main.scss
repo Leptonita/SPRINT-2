@@ -233,24 +233,28 @@ $spacers: map-merge($custom-spacers, $spacers);
 
 .accordion-button,
 .accordion-button:not(.collapsed) {
+    padding-left: 0;
     color: $gray-700;
     background-color: white;
-}
 
-.accordion-button:focus {
-    border: 0;
-    box-shadow: 0 1px $gray-300;
+    &:focus {
+        border: 0;
+        box-shadow: 0 1px $gray-300;
+    }
+    &:hover {
+        color: $secondary
+    }
+    
 }
 
 
 .accordion-body {
     color: $gray-600;
-    
-}
-
-.accordion-button {
+    text-align: left;
     padding-left: 0;
 }
+
+
 
 //form validation
 .was-validated .form-control:invalid {
@@ -269,4 +273,12 @@ $spacers: map-merge($custom-spacers, $spacers);
 
 #inputEmail {
     font-size: 0.8rem;
+}
+
+.icons-socials:hover {
+    filter:invert(0.4)
+    sepia(1)
+    hue-rotate(310deg)
+    saturate(8)
+    brightness(1);
 }

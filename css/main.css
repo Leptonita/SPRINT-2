@@ -11128,20 +11128,23 @@ textarea.form-control-lg {
 
 .accordion-button,
 .accordion-button:not(.collapsed) {
+  padding-left: 0;
   color: #495057;
   background-color: white;
 }
-
-.accordion-button:focus {
+.accordion-button:focus,
+.accordion-button:not(.collapsed):focus {
   border: 0;
   box-shadow: 0 1px #dee2e6;
+}
+.accordion-button:hover,
+.accordion-button:not(.collapsed):hover {
+  color: #FA5959;
 }
 
 .accordion-body {
   color: #6c757d;
-}
-
-.accordion-button {
+  text-align: left;
   padding-left: 0;
 }
 
@@ -11160,4 +11163,8 @@ textarea.form-control-lg {
 
 #inputEmail {
   font-size: 0.8rem;
+}
+
+.icons-socials:hover {
+  filter: invert(0.4) sepia(1) hue-rotate(310deg) saturate(8) brightness(1);
 }/*# sourceMappingURL=main.css.map */
