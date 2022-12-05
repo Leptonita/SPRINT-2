@@ -11167,4 +11167,26 @@ textarea.form-control-lg {
 
 .icons-socials:hover {
   filter: invert(0.4) sepia(1) hue-rotate(310deg) saturate(8) brightness(1);
+}
+
+/* cards download ej7 */
+.col:nth-child(3) .card, .col:nth-child(2) .card, .col:nth-child(1) .card {
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col:nth-child(1) .card {
+  margin-top: 0rem;
+}
+
+.col:nth-child(2) .card {
+  margin-top: 3rem;
+}
+
+.col:nth-child(3) .card {
+  margin-top: 6rem;
 }/*# sourceMappingURL=main.css.map */

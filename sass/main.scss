@@ -282,3 +282,22 @@ $spacers: map-merge($custom-spacers, $spacers);
     saturate(8)
     brightness(1);
 }
+
+/* cards download ej7 */
+//card align-items-center border-0 justify-content-center text-center shadow mx-auto
+%card-download {
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@for $i from 1 through 3 {
+    .col:nth-child(#{$i}) .card {
+        @extend %card-download;
+        margin-top: ($i - 1) * 3rem;
+    }
+}
